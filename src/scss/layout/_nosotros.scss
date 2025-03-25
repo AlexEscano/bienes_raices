@@ -1,0 +1,15 @@
+@include tablet {
+    .icono-contenedor {
+        @include grid(3, 3rem);
+
+    }
+}
+
+.icono {
+    
+
+
+    img {
+        height: 10rem;
+    }
+}
