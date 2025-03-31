@@ -44,21 +44,10 @@
     }
 }
 
-.boton-propiedades {
-    background-color: $amarillo;
-    &:hover {
-        background-color: darken($amarillo, 5%);
-    }
+.boton-amarillo-block{
+    @include boton($amarillo, block);
+}
+.boton-verde {
+    @include boton($verde, inline-block);
 }
 
-.btn-vermas {
-    display: flex;
-    justify-content: flex-end;
-    .boton-vermas {
-        background-color: $verde;
-        width: auto;
-        margin: 2rem 0;
-        
-    }
-}
-    

@@ -1,0 +1,28 @@
+.webp .bg-about {
+    background-image: url('/build/img/encuentra.webp');
+}
+
+.no-webp .bg-about {
+    background-image: url('/build/img/encuentra.jpg');
+    
+}
+
+.bg-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+}
+
+.contenido_about {
+    text-align: center;
+    color: $blanco;
+    h1 {
+        font-weight: bold;
+    }
+
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="build/css/app.css">
+    <title>Bienes y raices</title>
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="/">
+                    <img src="build/img/logo.svg" alt="">
+                </a>
+            <nav class="navegacion">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="anuncios.html">Anuncios</a>
+                <a href="blog.html">BLog</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+            </div><!--Barra-->
+        </div>
+    </header>
+
+    <main class="contenedor seccion">
+        <h1>contacto</h1>
+
+        <picture>
+            <source srcset="build/img/destacada3.webp" type="image/webp">
+            <source srcset="build/img/destacada3.jpg" type="image/jpeg">
+            <img src="build/img/destacada3.jpg" alt="">
+        </picture>
+        <h2>Llene el formulario de contacto</h2>
+        <form action="" class="formulario">
+            <fieldset>
+                <legend>Informacion personal</legend>
+
+                <label for="nombre">Nombre</label>
+                <input type="text" name="" id="nombre" placeholder="tu nombre">
+                
+                <label for="email">E-mail</label>
+                <input type="email" name="" id="email">
+                
+                <label for="telefono">Telefono</label>
+                <input type="tel" name="" id="email">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informacion de la vivienda</legend>
+
+                <label for="opciones">Vende o compra</label>
+                <select name="" id="opciones">
+                    <option value="" disabled>--Selecciona--</option>
+                    <option value="compra">Compra</option>
+                    <option value="compra">Vende</option>
+                </select>
+
+                <label for="presupuesto">Precio o presupuesto</label>
+                <input type="number" placeholder="Tu presupuesto" id="presupuesto">
+            </fieldset>
+
+            <fieldset>
+                <legend>Contacto</legend>
+                <label for="contacto_telefono">Telefono</label>
+                <input type="radio" name="tipo_contacto" id="contacto_telefono">
+                <label for="contacto_email">E-mail</label>
+                <input type="radio" name="tipo_contacto" id="contacto_telefono">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer class="footer seccion">
+        <div class="contenedor contenido-footer">
+            <nav class="navegacion">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="anuncios.html">Anuncios</a>
+                <a href="blog.html">BLog</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+        <p class="copyright">Creacion de G. Alexander Escaño. Todos los derechos reservados 2025 &copy;</p>
+    </footer>
+
+    <script src="build/js/bundle.min.js"></script>
+</body>
+</html>

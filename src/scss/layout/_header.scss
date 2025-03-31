@@ -11,15 +11,19 @@
 .header {
     background-color: $grisOscuro;
 }
-.contenido-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 60rem;
+.inicio{
     h1 {
         color: $blanco;
         font-weight: $bold;
         max-width: 70rem;
+    }
+
+    .contenido-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 60rem;
+
     }
 }
 

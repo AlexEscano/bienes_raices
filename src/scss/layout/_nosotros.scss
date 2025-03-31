@@ -1,3 +1,5 @@
+//Partede home
+
 @include tablet {
     .icono-contenedor {
         @include grid(3, 3rem);
@@ -6,10 +8,32 @@
 }
 
 .icono {
-    
-
-
     img {
         height: 10rem;
+    }
+}
+
+//Parte de seccion nosotros
+
+@include tablet {
+    .contenido{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+
+    }
+}
+.contenido_nosotros {
+    h2 {
+        font-weight: bold;
+        &::after {
+            content: '';
+            display: block;
+            width: 15rem;
+            height: .5rem;
+            background-color: $verde;
+            margin-left: 10rem;
+            
+        }
     }
 }

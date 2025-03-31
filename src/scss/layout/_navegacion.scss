@@ -2,6 +2,15 @@
     display: flex;
     flex-direction: column;
     padding-top: 3rem;
+    .imagenLogo {
+        &::after {
+            content: '';
+            display: block;
+            width: 15rem;
+            height: .3rem;
+            background-color: $blanco;
+        }
+    }
     @include tablet {
         flex-direction: row;
         justify-content: space-between;
@@ -15,11 +24,15 @@
         gap: 3rem;
         align-items: center;
     }
-
-
-    a {
+    a{
         color: $blanco;
         font-size: 2rem;
         display: block;
+        transition: color ease .2s;
+        &:hover {
+            color: $verde;
+        }
     }
+
+
 }
